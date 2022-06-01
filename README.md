@@ -13,3 +13,8 @@ Basic command:
 More options with docker command
 
     -e RESYNC_PERIOD=timeout-value: to set the resync period, default is 1 hour. To set the TIMEOUT format description
+
+# Changelog
+
+    2022-06-01: version 0.1
+          Add mirror of main repository
