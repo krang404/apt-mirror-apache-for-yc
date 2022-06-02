@@ -14,13 +14,13 @@ set _tilde 0
 #
 ############# end config ##############
 
-deb-amd64 http://mirror.yandex.ru/ubuntu focal main
-deb-amd64 http://mirror.yandex.ru/ubuntu focal-security main
-deb-amd64 http://mirror.yandex.ru/ubuntu focal-updates main
+deb-amd64 http://mirror.yandex.ru/ubuntu focal main restricted universe multiverse
+deb-amd64 http://mirror.yandex.ru/ubuntu focal-security main restricted universe multiverse
+deb-amd64 http://mirror.yandex.ru/ubuntu focal-updates main restricted universe multiverse
 
-deb-i386 http://mirror.yandex.ru/ubuntu focal main
-deb-i386 http://mirror.yandex.ru/ubuntu focal-security main
-deb-i386 http://mirror.yandex.ru/ubuntu focal-updates main
+deb-i386 http://mirror.yandex.ru/ubuntu focal main restricted universe multiverse
+deb-i386 http://mirror.yandex.ru/ubuntu focal-security main restricted universe multiverse
+deb-i386 http://mirror.yandex.ru/ubuntu focal-updates main restricted universe multiverse
 
 #deb http://archive.ubuntu.com/ubuntu artful-proposed main restricted universe multiverse
 #deb http://archive.ubuntu.com/ubuntu artful-backports main restricted universe multiverse
