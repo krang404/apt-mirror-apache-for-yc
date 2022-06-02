@@ -4,8 +4,6 @@ if [ ! -d /var/www/html/ubuntu/ ]; then
     mkdir -p /var/www/html/ubuntu/
 fi
 
-sed -i '12s|DocumentRoot /var/www/html|DocumentRoot /var/www/html/ubuntu/mirror|' /etc/apache2/sites-enabled/000-default.conf
-
 # Apache gets grumpy about PID files pre-existing
 rm -f /var/run/apache2/apache2.pid
 
