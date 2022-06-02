@@ -7,6 +7,9 @@ ENV RESYNC_PERIOD 1h
 RUN apt-get update \
   && apt-get install --no-install-recommends -y wget apt-mirror apache2 \
   && apt-get autoclean \
+  && mkdir -p /var/www/html/ubuntu/ \
+  && sed -i '12s|DocumentRoot /var/www/html|DocumentRoot /var/www/html/ubuntu/mirror|' \
+  etc/apache2/sites-enabled/000-default.conf
   && rm -rf /var/lib/apt/lists/*
 
 COPY mirror.list /etc/apt/mirror.list
